@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VM</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%230078d4' d='M1 3.4 7 2.6v5.1H1zm7-.9 7-1v6.2H8zM1 8.5h6v5.1l-6-.8zm7 0h7v6.2l-7-1z'/%3E%3C/svg%3E">
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    id="vm"
+    title="VM"
+    allow="fullscreen; clipboard-read; clipboard-write"
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    document.getElementById("vm").src = atob("aHR0cHM6Ly9jbGkuaDIubmV4dXM=");
+  </script>
+</body>
+</html>
